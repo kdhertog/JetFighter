@@ -7,13 +7,17 @@ This is the main file used for running the game
 
 #--- Imports
 import pygame
+import os
 
 import constants as cts
-import game
+import Classes.game as game
 
+
+os.system('cls' if os.name == 'nt' else 'clear') #Clearing the terminal
 
 #--- Initialisation
 pygame.init()       #Initialize pygame           # pylint: disable=maybe-no-member
+#Should probably initialise the music as well
 
 screen = pygame.display.set_mode((cts.screenwidth, cts.screenheight)) #Initialise the game screen
 clock = pygame.time.Clock() #Initialise clock
@@ -21,6 +25,7 @@ clock = pygame.time.Clock() #Initialise clock
 game = game.Game()
 
 #--- Main loop
+print("Game start")
 running = True
 while running:
 
@@ -42,3 +47,5 @@ while running:
     game.draw(screen) #Game class function that draws new situation to screen         # pylint: disable=too-many-function-args
     
     game.update() #Update screen to display
+
+print("Game end")
