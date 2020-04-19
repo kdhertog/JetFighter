@@ -1,0 +1,31 @@
+{
+    "size": 36,
+    "spawnpoint": [9,12],
+    "maxhistory": 8,
+    "maxlives": 2,
+    "text": ["Lets try this again.",
+             "Use your first Echo to switch the green switch in the bottom left.",
+             "Use your second Echo to then go to the yellow circle and win the game."],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [8,5]
+        },
+        {
+            "type":"triggerText",
+            "pos": [5,14],
+            "text": ["Use spacebar to wait the whole day now."]
+        },
+        {
+            "type":"triggerText",
+            "newlife": 1,
+            "text": ["Now use this echo to go straight up and win the level!"]
+        },
+        {
+            "type":"switch",
+            "pos": [5,14],
+            "targetposlist": [[8,4],[9,4],[7,4],[7,5],[9,5],[8,6],[9,6],[7,6]],
+            "oneuse": false
+        }
+    ]
+}

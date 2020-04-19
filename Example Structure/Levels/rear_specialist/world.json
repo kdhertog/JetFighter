@@ -1,0 +1,25 @@
+{
+    "size": 48,
+    "spawnpoint": [3,4],
+    "maxhistory": 9,
+    "maxlives": 2,
+    "text": ["You only have two possible echos, which makes this difficult","","You can do it!"],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [8,8]
+        },
+        {
+            "type":"switch",
+            "pos": [6,4],
+            "target": [4,8],
+            "oneuse": false
+        },
+        {
+            "type":"switch",
+            "pos": [6,6],
+            "target": [6,8],
+            "oneuse": false
+        }
+    ]
+}

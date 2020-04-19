@@ -1,0 +1,25 @@
+{
+    "size": 36,
+    "spawnpoint": [8,7],
+    "maxhistory": 17,
+    "maxlives": 3,
+    "text": ["You are on your own for this level, good luck!"],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [4,7]
+        },
+        {
+            "type":"switch",
+            "pos": [12,8],
+            "target": [7,4],
+            "oneuse": false
+        },
+        {
+            "type":"switch",
+            "pos": [6,4],
+            "target": [5,7],
+            "oneuse": false
+        }
+    ]
+}

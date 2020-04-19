@@ -1,0 +1,19 @@
+{
+    "size": 64,
+    "spawnpoint": [1,4],
+    "maxhistory": 15,
+    "maxlives": 2,
+    "text": [],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [1,1]
+        },
+        {
+            "type":"switch",
+            "pos": [4,2],
+            "target": [2,3],
+            "oneuse": false
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "size": 36,
+    "spawnpoint": [6,6],
+    "maxhistory": 8,
+    "maxlives": 3,
+    "text": ["You have more echos to use in this level.",
+             "With the first two, trigger a switch"
+            ],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [6,2]
+        },
+        {
+            "type":"switch",
+            "pos": [5,8],
+            "target": [6,4],
+            "oneuse": false
+        },
+        {
+            "type":"triggerText",
+            "pos": [5,8],
+            "text": ["Make sure you use use the spacebar to skip hours!"]
+        },
+        {
+            "type":"switch",
+            "pos": [5,10],
+            "target": [6,3],
+            "oneuse": false
+        }
+    ]
+}

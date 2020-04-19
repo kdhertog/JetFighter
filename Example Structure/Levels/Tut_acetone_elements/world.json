@@ -1,0 +1,35 @@
+{
+    "size": 36,
+    "spawnpoint": [12,11],
+    "maxhistory": 9,
+    "maxlives": 2,
+    "text": ["- You only have one day, each time you move an hour passes.",
+             "- You can use space to skip an hour.",
+             "- You can see how many hours in the top left of the screen.",
+             "- You have several Echoes to use. When the day ends, an echo of",
+             "your actions happens as you replay the day"],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [12,4]
+        },
+        {
+            "type":"triggerText",
+            "pos": [6,11],
+            "text": ["Wait until the day ends"]
+        },
+        {
+            "type":"triggerText",
+            "newlife": 1,
+            "text": ["Most levels limit how many Echoes are in play at one time.",
+                     "Check how many Echos you have left in upper-left hand corner",
+                     "You only have one Echo left: use it wisely!"]
+        },
+        {
+            "type":"switch",
+            "pos": [6,11],
+            "target": [12,5],
+            "oneuse": false
+        }
+    ]
+}

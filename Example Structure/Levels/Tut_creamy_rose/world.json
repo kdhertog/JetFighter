@@ -1,0 +1,16 @@
+{
+    "size": 48,
+    "spawnpoint": [6,1],
+    "maxhistory": -1,
+    "maxlives": -1,
+    "text": ["Welcome to Before Night Falls!",
+             "You move with your arrow keys.",
+             "The goal of the game is to get to the Yellow Circle.",
+             "Move to the Yellow Circle at the bottom of the screen"],
+    "entities": [
+        {
+            "type":"levelend",
+            "pos": [6,10]
+        }
+    ]
+}
