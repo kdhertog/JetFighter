@@ -20,6 +20,8 @@ pygame.init()       #Initialize pygame           # pylint: disable=maybe-no-memb
 #Should probably initialise the music as well
 
 screen = pygame.display.set_mode((cts.screenwidth, cts.screenheight)) #Initialise the game screen
+screen.fill((255,0,0))
+pygame.display.flip()
 clock = pygame.time.Clock() #Initialise clock
 
 game = game.Game()
@@ -42,10 +44,11 @@ while running:
         else:
             gameEvents.append(event)
 
-    game.handleEvents(gameEvents) #Let the game class handle events         # pylint: disable=too-many-function-args
+    #game.handleEvents(gameEvents) #Let the game class handle events         # pylint: disable=too-many-function-args
     
-    game.draw(screen) #Game class function that draws new situation to screen         # pylint: disable=too-many-function-args
+    #game.draw(screen) #Game class function that draws new situation to screen         # pylint: disable=too-many-function-args
     
-    game.update() #Update screen to display
+    #game.update() #Update screen to display
+    pygame.display.flip()
 
 print("Game end")
